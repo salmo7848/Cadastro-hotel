@@ -15,16 +15,15 @@ import java.util.Scanner;
  */
 public class Operator {
   Scanner cc = new Scanner(System.in);
-  //NumberFormat ftel = new DecimalFormat("###.###.###-##");
-  //NumberFormat fcpf = new DecimalFormat("###.###.###-##");   
-    public String nome;
-    public String oopcao;
-    public String email;
-    public int idade;
-    public int quarto;
-    public String telefone;
-    public String cpf;
-
+    //Atributos da classe Operator, alterados para private  
+    private String nome;
+    private String oopcao;
+    private String email;
+    private int idade;
+    private int quarto;
+    private String telefone;
+    private String cpf;
+    //Construtor para acesso aos atributos através de outra classes 
     public Operator(String nome,int idade,String telefone, String cpf,String email) {
         this.nome = nome;
         this.email = email;
@@ -32,11 +31,10 @@ public class Operator {
         this.telefone = telefone;
         this.cpf = cpf;
     }
-
-    public Operator() {
-      
-    }
-
+    /*Linhas 38 á 84 - Metodos Getters e Setters
+     *Getters --> Metodo para ler atributos
+     *Setters --> Metodo para alterar valores dos atributos 
+     */
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -84,22 +82,5 @@ public class Operator {
     public String getCpf() {
         return cpf;
     }
-
-
-    
-    /*public void email(){
-        String eemail = null;
-        String p = "";
-        System.out.print("Deseja informar o email: S/N ");
-        String oopcao = cc.nextLine();
-        if("S".equals(oopcao)){
-           System.out.print("Informe o e-mail:");
-           eemail = cc.nextLine();
-           setEmail(eemail);
-        }else{
-           System.out.print("Email não cadastrado!");
-         }
-           
-    }*/
 }
     

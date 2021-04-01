@@ -26,7 +26,7 @@ public class TelaUm {
         int quant = sc.nextInt();
         /*Linha 27 - Objeto dados intanciando o construtor Operator()
          *Linha 28 - Objeto vetor  intanciando a variavel alugado como tamanho do vetor*/
-        Operator dados = new Operator();
+        
         Operator [] vetor = new Operator [alugado];
        
         /* Linhas 36 á 61 - Laço do vetor solicitando dados intanciados de contrutor
